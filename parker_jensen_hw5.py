@@ -2,7 +2,12 @@
 
 pintries = 0
 
-def getInput(pintries):
+def getInput():
+    """
+    Attempts 3 times to receive the correct pin through user input
+    Correct pin is 4 digits long
+    """
+    global pintries
     if pintries < 3:
         pin = input("Enter your pin...")
         if len(pin) != 4:
@@ -20,7 +25,12 @@ def getInput(pintries):
         print("Your bank card is blocked!")
         exit(1)
 
+def main():
+    """
+    test function
+    """
+    getInput
+
 if __name__=="__main__":
-    pintries = 0
-    getInput(pintries)
+    main()
     exit(0)
