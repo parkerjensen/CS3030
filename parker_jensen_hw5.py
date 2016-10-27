@@ -13,14 +13,14 @@ def getInput():
         if len(pin) != 4:
             print("Incorrect length for a pin. A pin is 4 digits long.")
             pintries += 1
-            getInput(pintries)
+            getInput()
         elif pin == "1234":
             print("Your pin is correct!")
             exit(0)
         else:
             print("Your pin is incorrect.")
             pintries += 1
-            getInput(pintries)
+            getInput()
     else:
         print("Your bank card is blocked!")
         exit(1)
@@ -29,7 +29,7 @@ def main():
     """
     test function
     """
-    getInput
+    getInput()
 
 if __name__=="__main__":
     main()
